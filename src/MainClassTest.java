@@ -4,9 +4,10 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetClassNumber() {
-        int classNum = new MainClass().getClassNumber();
+    public void testGetClassString() {
+        String classStr = new MainClass().getClassString();
 
-        Assert.assertTrue("Class number <= 45", classNum > 45);
+        Assert.assertTrue("The string doesn't contain \"Hello\" or \"hello\"",
+                classStr.contains("Hello") || classStr.contains("hello"));
     }
 }
