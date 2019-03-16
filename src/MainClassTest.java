@@ -4,10 +4,9 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetLocalNumber() {
-        int expected = 14;
-        int actual = new MainClass().getLocalNumber();
+    public void testGetClassNumber() {
+        int classNum = new MainClass().getClassNumber();
 
-        Assert.assertTrue("Current number != 14", expected == actual);
+        Assert.assertTrue("Class number <= 45", classNum > 45);
     }
 }
